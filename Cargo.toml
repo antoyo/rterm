@@ -4,8 +4,16 @@ name = "rterm"
 version = "0.1.0"
 
 [dependencies]
+gdk = "^0.5.2"
+glib = "^0.1.2"
+gobject-sys = "^0.3.3"
 gtk = "^0.1.2"
+libc = "^0.2.21"
+pango-sys = "^0.3.3"
 relm = "^0.7.6"
 relm-attributes = "^0.7.0"
 relm-derive = "^0.7.0"
 vte-rs = "^0.1.0"
+
+[features]
+default = ["vte-rs/v0_48"]
